@@ -1,7 +1,7 @@
 # attitude toward the tiger conservation 
 library(MuMIn)
-setwd('e:/Dropbox/work/WCS/Mukhacheva/data/')
-var1=read.csv('all_respond_paramet18Oct2019.csv') 
+setwd('')
+var1=read.csv('SurveyData.csv') 
 var1=var1[var1$place == "village", ] # villager only
 var1$rod_zanatiy[var1$rod_zanatiy !=3] <- "NOh" # hunter versus non-hunters
 var1$rod_zanatiy[var1$rod_zanatiy ==3] <- "Oh"
